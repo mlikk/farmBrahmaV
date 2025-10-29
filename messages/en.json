@@ -1,0 +1,252 @@
+
+{
+  "DashboardLayout": {
+    "appName": "Farm Brahma",
+    "footerDisclaimer": "All data is AI-generated based on publicly available information. Always verify critical information with local agricultural authorities."
+  },
+  "DashboardNav": {
+    "dashboard": "Dashboard",
+    "marketTrends": "Market Trends",
+    "aiAdvice": "AI Advice",
+    "environment": "Environment",
+    "community": "Community",
+    "support": "Support"
+  },
+  "DashboardHeader": {
+    "farmLocation": "Farm Location",
+    "notSet": "Not Set",
+    "change": "Change"
+  },
+  "DashboardPage": {
+    "title": "Dashboard",
+    "descriptionLoading": "Loading data for your location...",
+    "description": "Here's your farm's overview.",
+    "topProfitableCrop": "Top Profitable Crop",
+    "marketTrend": "Market Trend",
+    "weatherAlert": "Weather Alert",
+    "aiRecommendations": "AI Recommendations",
+    "getPlantingAdvice": "Get Planting Advice",
+    "liveMarketUpdates": "Live Market Updates",
+    "mandiUpdates": "Real-time prices from your local mandi.",
+    "crop": "Crop",
+    "price": "Price",
+    "change": "Change",
+    "dataSourcesTitle": "Data Sources for Dashboard Summary",
+    "welcomeTitle": "Welcome to Farm Brahma!",
+    "welcomeMessage": "Please select your farm location using the button in the top right corner to get started."
+  },
+  "CommunityPage": {
+    "title": "Community Forum",
+    "description": "Connect with fellow farmers, share knowledge, and discuss best practices.",
+    "newDiscussion": "Start a New Discussion",
+    "postedBy": "Posted by",
+    "likes": "Likes",
+    "comments": "Comments",
+    "readMore": "Read More"
+  },
+  "EnvironmentPage": {
+    "title": "Environmental Data",
+    "descriptionLoading": "Loading environmental data...",
+    "description": "Showing data for {address}",
+    "currentWeather": "Current Weather",
+    "temperature": "Temperature",
+    "feelsLike": "Feels like {value}",
+    "humidity": "Humidity",
+    "windSpeed": "Wind Speed",
+    "uvIndex": "UV Index",
+    "soilConditions": "Soil Conditions",
+    "soilMoisture": "Soil Moisture",
+    "soilPh": "Soil pH",
+    "nitrogen": "Nitrogen (N)",
+    "potassium": "Potassium (K)",
+    "annualRainfall": "Annual Rainfall",
+    "annualRainfallDescription": "Monthly average rainfall data for your region.",
+    "dataSourcesTitle": "Data Sources",
+    "noData": "Could not load environmental data. Please select a valid location."
+  },
+  "LocationPage": {
+    "title": "Farm Location",
+    "description": "Select your farm's location to get precise data."
+  },
+  "LocationPicker": {
+    "title": "Select Location & Draw Farm Area",
+    "description": "Use the tools on the left to draw a polygon or place a marker.",
+    "area": "Area: {area} acres",
+    "locateMe": "Locate Me"
+  },
+  "MarketChart": {
+    "priceTrendTitle": "{cropName} Price Trend",
+    "last6Months": "Last 6 Months",
+    "priceLabel": "Price (₹/Quintal)"
+  },
+  "MarketTrendsPage": {
+    "title": "Market Trends",
+    "descriptionLoading": "Loading market data...",
+    "descriptionNoLocation": "Please select a specific location",
+    "description": "Showing prices for {address}",
+    "cropPrices": "Crop Prices",
+    "priceUnit": "All prices are in ₹/Quintal for {address}.",
+    "searchPlaceholder": "Search by crop name...",
+    "tableCrop": "Crop",
+    "tableVariety": "Variety",
+    "tableMarket": "Market",
+    "tablePrice": "Price",
+    "dataSourcesTitle": "Data Sources",
+    "noData": "Could not load market data. Please select a valid location."
+  },
+  "RecommendationsPage": {
+    "title": "AI-Powered Advice",
+    "description": "Leverage AI to make smarter farming decisions.",
+    "profitabilityTab": "Profitability Forecaster",
+    "plantingTab": "Personalized Planting"
+  },
+  "ProfitabilityForm": {
+    "title": "Profitability Forecaster",
+    "description": "Enter your farm details to get AI-powered profit estimates and marketing strategies.",
+    "locationLabel": "Location",
+    "locationPlaceholder": "e.g., Nashik, Maharashtra",
+    "soilTypeLabel": "Soil Type",
+    "soilTypePlaceholder": "e.g., Black Clay Soil",
+    "farmAreaLabel": "Farm Area (in acres)",
+    "farmAreaPlaceholder": "e.g., 10",
+    "waterSourceLabel": "Water Source",
+    "waterSourcePlaceholder": "Select a water source",
+    "historicalDataLabel": "Historical Data (Optional)",
+    "historicalDataPlaceholder": "e.g., Last year planted cotton, yield was 15 quintals/acre. Faced issues with bollworm.",
+    "submitButton": "Forecast Profits & Strategies",
+    "resultTitle": "Profitability Forecast & Marketing Plan",
+    "marketingStrategies": "Marketing Strategies",
+    "marketOptions": "Market Options",
+    "dataSourcesTitle": "Data Sources"
+  },
+  "PlantingForm": {
+    "title": "Personalized Recommendations",
+    "description": "Get planting advice and risk analysis tailored to your farm's unique conditions.",
+    "locationLabel": "Location",
+    "locationPlaceholder": "e.g., Moga, Punjab",
+    "soilTypeLabel": "Soil Type",
+    "soilTypePlaceholder": "e.g., Alluvial Loam",
+    "farmAreaLabel": "Farm Area (in acres)",
+    "farmAreaPlaceholder": "e.g., 25",
+    "waterSourceLabel": "Water Source",
+    "waterSourcePlaceholder": "Select a water source",
+    "photoLabel": "Site/Crop Image (Optional)",
+    "historicalDataLabel": "Historical Data (Optional)",
+    "historicalDataPlaceholder": "e.g., Last year planted cotton, yield was 15 quintals/acre. Faced issues with bollworm.",
+    "submitButton": "Get Recommendations",
+    "resultTitle": "Personalized Planting Plan & Risk Analysis",
+    "recommendedArea": "Recommended Area: {area} acres",
+    "reasoning": "Reasoning",
+    "riskAnalysis": "Risk Analysis",
+    "climatic": "Climatic",
+    "soil": "Soil",
+    "biological": "Biological",
+    "agronomic": "Agronomic",
+    "socioEconomic": "Socio-Economic",
+    "riskRating": "{rating} Risk",
+    "dataSourcesTitle": "Data Sources"
+  },
+  "LocationDialog": {
+    "title": "Select Farm Location & Draw Area",
+    "description": "Use the tools on the left to draw a polygon or place a marker to calculate area and get location details.",
+    "geocodingMessage": "Getting location details..."
+  },
+  "WaterSources": {
+    "Rain-fed": "Rain-fed",
+    "Canal": "Canal Irrigation",
+    "Borewell/Tubewell": "Borewell/Tubewell",
+    "River/Lift Irrigation": "River/Lift Irrigation",
+    "Pond/Tank": "Pond/Tank"
+  },
+  "Errors": {
+    "formError": "An unexpected error occurred. Please try again."
+  },
+  "LanguageSwitcher": {
+    "changeLanguage": "Change Language"
+  },
+  "PartnerPage": {
+    "appName": "Farm Brahma",
+    "contactUs": "Contact Us",
+    "hero": {
+      "title": "Empowering Agriculture with Actionable AI Insights",
+      "subtitle": "Join us in transforming Indian agriculture. Farm Brahma provides FPOs, retailers, and partners with the data-driven tools needed to boost yields, increase profitability, and build a resilient supply chain."
+    },
+    "problem": {
+      "title": "The Uncertainty in Modern Farming",
+      "description": "Farmers face constant challenges: unpredictable weather, volatile market prices, soil degradation, and pest attacks. Making the right decision at the right time is critical, but access to reliable, localized, and actionable information is often lacking."
+    },
+    "solutions": {
+      "title": "Your Solution: Data-Driven Farming",
+      "smarterDecisions": {
+        "title": "Smarter Decisions",
+        "description": "Hyper-local weather, soil analysis, and market trends to guide crop selection and timing."
+      },
+      "increasedProfitability": {
+        "title": "Increased Profitability",
+        "description": "AI-powered forecasts to identify the most profitable crops and optimal selling times."
+      },
+      "reducedRisk": {
+        "title": "Reduced Risk",
+        "description": "Proactive pest/disease alerts and personalized risk analysis for every crop."
+      }
+    },
+    "benefits": {
+      "title": "Unlock Key Benefits for Your Network",
+      "description": "Equip your farmers with a competitive edge.",
+      "benefit1": {
+        "value": "Up to 15% Savings per Acre",
+        "description": "Through optimized input usage and timely interventions."
+      },
+      "benefit2": {
+        "value": "20% Fewer Sprays",
+        "description": "With accurate pest forecasting and targeted advice."
+      }
+    },
+    "howItWorks": {
+      "title": "Simple Steps to Precision Farming",
+      "step1": {
+        "title": "Onboard Farmers",
+        "description": "Easily register farmers and map their farm locations using our intuitive interface."
+      },
+      "step2": {
+        "title": "Access Insights",
+        "description": "Instantly receive personalized, AI-driven advice for every farm in your network."
+      },
+      "step3": {
+        "title": "Drive Growth",
+        "description": "Utilize data to plan procurements, manage inventory, and increase overall profitability."
+      }
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "description": "Custom plans available for FPOs, Agri-businesses, and Retailers.",
+      "price": "₹99",
+      "unit": "/farmer/year",
+      "feature1": "Unlimited AI Advice",
+      "feature2": "Live Market & Weather Data",
+      "feature3": "Partner Dashboard & Support",
+      "cta": "Get a Custom Quote"
+    },
+    "testimonials": {
+      "title": "Trusted by Leaders in Agriculture",
+      "fpo": {
+        "quote": "Farm Brahma has been a game-changer for our FPO. The market trend analysis allows us to advise our farmers on when to sell, maximizing their income. It's an indispensable tool for us.",
+        "name": "Arjun Desai",
+        "title": "Director, Sahyadri Farmers Producer Co."
+      },
+      "retailer": {
+        "quote": "Our inventory management has improved drastically. By understanding what crops are likely to have high yields in our area, we can stock inputs more effectively. Our sales are up 25%.",
+        "name": "Priya Sharma",
+        "title": "Owner, Kisan Seva Kendra"
+      }
+    },
+    "cta": {
+      "title": "Ready to Partner with Us?",
+      "description": "Let's work together to bring the power of AI to every farmer in India. Contact us today to schedule a demo or discuss a partnership.",
+      "whatsapp": "Connect on WhatsApp"
+    },
+    "footer": {
+      "rights": "All Rights Reserved."
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# https://firebase.google.com/docs/app-hosting/configure
+
+# Enables multi-region serving for lower latency and higher availability.
+regional: true
+
+runConfig:
+  # Increase this value to automatically spin up more instances
+  # in response to increased traffic for a production environment.
+  maxInstances: 10

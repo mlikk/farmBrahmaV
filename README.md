@@ -125,7 +125,7 @@ You can run this application on any server (like a VM from any cloud provider) t
 
 #### Prerequisites
 
-1.  **Node.js**: Ensure Node.js (v18 or newer) is installed on your server.
+1.  **Node.js**: Ensure Node.js (v18 or newer) is installed on your server, preferably using [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm).
 2.  **Process Manager**: It is highly recommended to use a process manager like `pm2` to keep the application running continuously. You can install it globally:
     ```bash
     npm install -g pm2
@@ -134,7 +134,12 @@ You can run this application on any server (like a VM from any cloud provider) t
 #### Step 1: Upload Code and Install Dependencies
 
 1.  **Transfer Code**: Copy your application code to the server (e.g., using `git clone` or `scp`).
-2.  **Install Dependencies**: Navigate to the project directory and run:
+2.  **Set Node Version**: Navigate to the project directory and use `nvm` to select the correct Node.js version.
+    ```bash
+    # Use the version specified in the project, e.g., v18
+    nvm use 18 
+    ```
+3.  **Install Dependencies**:
     ```bash
     npm install
     ```
@@ -149,19 +154,32 @@ Create a file named `.env.local` in the root of your project on the server. This
     ```bash
     npm run build
     ```
-2.  **Start with `pm2`**: Start the application using `pm2`. This will run the `npm run start` command, which starts the production Next.js server.
+
+2.  **Start with `pm2`**: To ensure `pm2` uses the correct Node.js version managed by `nvm`, it's best to provide the full path to the `npm` executable.
+
+    First, find the path to the `npm` you want to use:
     ```bash
-    pm2 start npm --name "farm-brahma" -- run start
+    # This will output the path, e.g., /home/user/.nvm/versions/node/v18.18.0/bin/npm
+    which npm 
+    ```
+
+    Now, use that full path to start the application with `pm2`:
+    ```bash
+    # Replace the path with the output from the 'which npm' command
+    pm2 start /home/user/.nvm/versions/node/v18.18.0/bin/npm --name "farm-brahma" -- run start
     ```
     - `--name "farm-brahma"` gives your process a memorable name.
-    - `pm2` will now manage the process, automatically restarting it if it crashes.
+    - This command tells `pm2` to use the specific `npm` executable associated with your chosen `nvm` version, ensuring consistency.
 
 3.  **Save the Process List**: To make `pm2` automatically restart your app after a server reboot, run:
     ```bash
     pm2 startup
+    ```
+    - `pm2 startup` will provide a command you need to run once to set up the startup script for your operating system.
+    - After running the setup command, save the current process list:
+    ```bash
     pm2 save
     ```
-    - `pm2 startup` will provide a command you need to run once to set up the startup script.
 
 Your application is now running. You will likely need to configure a reverse proxy (like Nginx or Apache) to forward requests from port 80/443 to the port Next.js is running on (default is 3000).
 
